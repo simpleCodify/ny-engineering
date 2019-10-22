@@ -10,6 +10,11 @@ const About = () => {
 	return (
 		<Container className="mx-auto" style={{ marginTop: "20vh", marginBottom: "20vh" }}>
 			<Row className="my-5">
+				<div className="col-12">
+					<hr className="my-3" />
+					<h1>Our Firm</h1>
+					<hr className="my-3 mb-5" />
+				</div>
 				<div className="col-7 my-auto">
 					<p style={{ lineHeight: "20px" }}>NY Engineering is a structural engineering firm that has been in the business since 2004. Our projects encompass a wide range with the majority being residential and low rise commercial construction. We are a firm sized to allow participation by the principal in virtually all aspects of all projects. Our clients are predominantly architects, developers, design-build contractors and property owners. </p>
 					<p style={{ lineHeight: "20px" }}>
@@ -33,10 +38,10 @@ const About = () => {
 			</Row>
 			<Row className="my-5">
 				<div className="text-center mx-auto">
-					<hr className="my-5" />
+					<hr className="my-3" />
 
 					<h1>Our Services</h1>
-					<hr className="my-5" />
+					<hr className="my-3 mb-5" />
 
 					<p style={{ lineHeight: "20px" }}>We at N.Y. Engineering specialize in many different types of services. We have several certifications including the Simpson Strong-Tie seminar for Lateral Systems & Retrofits, the CBC 2014 SEAONC spring seminar, and the SEAONC seminar for Retrofitting Soft Wood-Framed Buildings.</p>
 					<p style={{ lineHeight: "20px" }}>
