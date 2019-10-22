@@ -1,26 +1,72 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+import About from "./pages/About";
+import Homepage from "./pages/Homepage";
+import Projects from "./pages/Projects";
+
+import LogoBanner from "./components/LogoBanner";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
+import Residential from "./components/Residential";
+import Remodels from "./components/Remodels";
+import Commercial from "./components/Commercial";
+import Seismic from "./components/Seismic";
+
+class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			show: false,
+			property: "",
+			test: []
+		};
+	}
+
+	handleClick = e => {
+		console.log(e.target.value);
+		console.log(e.target.name);
+		console.log(e.target.name.split("-"))
+		let imgs = e.target.name.split("-")
+		this.setState({ property: e.target.value, show: true, test: imgs });
+	};
+
+	showModal = () => {
+		this.setState({ show: true });
+	};
+
+	closeModal = () => {
+		this.setState({ show: false });
+	};
+
+	render() {
+		return (
+			<div>
+				<LogoBanner />
+				<NavBar />
+
+				<Switch>
+					<Route exact path="/" children={<Homepage />} />
+					<Route exact path="/projects" children={<Projects />} />
+					<Route path="/projects/residential" children={<Residential handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} />
+					<Route path="/projects/remodels" children={<Remodels handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} />
+					<Route path="/projects/commercial" children={<Commercial handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} />
+					<Route path="/projects/seismic-retrofit" children={<Seismic handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} />
+
+					{/* <Route exact path="/testing" children={<Testing handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property}/>} />
+					<Route path="/testingtwo" children={<TestingTwo handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} /> */}
+
+					<Route path="/about" children={<About />} />
+				</Switch>
+
+				<Footer />
+			</div>
+		);
+	}
 }
 
 export default App;
