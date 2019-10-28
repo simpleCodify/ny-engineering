@@ -34,9 +34,10 @@ const Commercial = props => {
 	return (
 		<Container>
 			<Container>
-				<h1 className="text-center my-5">Commercial & Industrial</h1>
+				<hr className="my-3 col-md-6" />
+				<h1 className="text-center my-5 titlehead">Commercial & Industrial</h1>
+				<hr className="my-3 mb-5 col-md-7" />
 
-				<hr className="my-5" />
 				<CardColumns>
 					{commercial.map((build, idx) => {
 						let time = Math.random() * 4;

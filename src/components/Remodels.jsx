@@ -43,11 +43,11 @@ let imgPath2 = require.context("../../public/images/remodels", true);
 
 const Remodels = props => {
 	return (
-		<Container className="my-5">
-			<Container className="my-5">
-				<h1 className="text-center my-5">Remodeling and Additions</h1>
-				<hr className="my-5" />
-
+		<Container>
+			<Container>
+				<hr className="my-3 col-md-6" />
+				<h1 className="text-center my-5 titlehead">Remodeling and Additions</h1>
+				<hr className="my-3 mb-5 col-md-7" />
 				<CardColumns>
 					{remodels.map((build, idx) => {
 						let time = Math.random() * 4;

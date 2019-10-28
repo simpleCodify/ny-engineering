@@ -195,3 +195,29 @@ a {
 .dropdown-menu {
 	width: 300px;
 }
+
+.about-profileimg,
+.about-clientimg {
+	transition: all 0.5s ease 0s;
+	object-fit: contain;
+	padding: 0;
+}
+
+.about-profileimg:hover {
+	transform: translate(5px, -5px);
+	box-shadow: -12px 20px 23px 0px rgba(0, 0, 0, 0.7);
+}
+
+.about-clientimg:hover {
+	transform: translate(-5px, -5px);
+	box-shadow: 12px 20px 23px 0px rgba(0, 0, 0, 0.7);
+}
+
+.titlehead {
+	color: transparent;
+	background: #666666;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+}

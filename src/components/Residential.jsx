@@ -53,11 +53,12 @@ let imgPath = require.context("../../public/images/newResidential", true);
 
 const Residential = props => {
 	return (
-		<Container className="my-5">
-			<Container className="my-5">
-				<h1 className="text-center my-5">New Residentials</h1>
+		<Container>
+			<Container>
+				<hr className="my-3 col-md-6" />
+				<h1 className="text-center my-5 titlehead">New Residentials</h1>
+				<hr className="my-3 mb-5 col-md-7" />
 
-				<hr className="my-5" />
 				<CardColumns>
 					{residential.map((build, idx) => {
 						let time = Math.random() * 4;

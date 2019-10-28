@@ -8,12 +8,12 @@ let nclientpic = biopicPathtwo("./client.jpg");
 
 const About = () => {
 	return (
-		<Container className="mx-auto" style={{ marginTop: "20vh", marginBottom: "20vh" }}>
-			<Row className="my-5">
+		<Container className="mx-auto" style={{ marginBottom: "20vh" }}>
+			<Row className="mb-5">
 				<div className="col-12">
-					<hr className="my-3" />
-					<h1>Our Firm</h1>
-					<hr className="my-3 mb-5" />
+					<hr className="my-3 col-md-6" />
+					<h1 className="text-center my-5  titlehead">Our Firm</h1>
+					<hr className="my-3 mb-5 col-md-7" />
 				</div>
 				<div className="col-7 my-auto">
 					<p style={{ lineHeight: "20px" }}>NY Engineering is a structural engineering firm that has been in the business since 2004. Our projects encompass a wide range with the majority being residential and low rise commercial construction. We are a firm sized to allow participation by the principal in virtually all aspects of all projects. Our clients are predominantly architects, developers, design-build contractors and property owners. </p>
@@ -23,13 +23,13 @@ const About = () => {
 					</p>
 				</div>
 				<div className="col-md-5 ml-auto">
-					<img className="col-12" src={nbiopic}></img>
+					<img className="col-12 about-profileimg" src={nbiopic}></img>
 				</div>
 			</Row>
 			<hr />
 			<Row className="my-5">
 				<div className="col-md-5">
-					<img className="col-12" src={nclientpic} />
+					<img className="col-12 about-clientimg" src={nclientpic} />
 				</div>
 				<div className="col-7 my-auto ml-auto">
 					<p style={{ lineHeight: "20px" }}>Our design approach is to have a collaborative effort between the client, architect, and contractors. Our principle is that we want to solve problems that arise, not to create project obstructions. Our goal is to provide an economical solution to designs that push the envelope rather than compromise a design with over-engineering.</p>
@@ -38,10 +38,9 @@ const About = () => {
 			</Row>
 			<Row className="my-5">
 				<div className="text-center mx-auto">
-					<hr className="my-3" />
-
-					<h1>Our Services</h1>
-					<hr className="my-3 mb-5" />
+					<hr className="my-3 col-md-6" />
+					<h1 className="my-5 titlehead">Our Services</h1>
+					<hr className="my-3 mb-5 col-md-7" />
 
 					<p style={{ lineHeight: "20px" }}>We at N.Y. Engineering specialize in many different types of services. We have several certifications including the Simpson Strong-Tie seminar for Lateral Systems & Retrofits, the CBC 2014 SEAONC spring seminar, and the SEAONC seminar for Retrofitting Soft Wood-Framed Buildings.</p>
 					<p style={{ lineHeight: "20px" }}>
