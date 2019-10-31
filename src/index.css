@@ -221,3 +221,13 @@ a {
 	background-clip: text;
 	text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
 }
+
+#about-title {
+	font-weight: 700;
+}
+
+.about-card {
+	border: 3px outset rgba(128, 128, 128, 0.76);
+	border-radius: 25px;
+	box-shadow: 2px 20px 23px 0px rgba(0, 0, 0, 0.5);
+}
