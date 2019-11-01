@@ -42,7 +42,7 @@ const Projects = () => {
 				{/* <CarouselSlides /> */}
 
 				<CardGroup>
-					<Card className="bg-dark text-white mx-3 my-3">
+					<Card className="bg-dark text-white mx-3 my-3 projectpage-cards">
 						<Card.Img src={resimgSrc} alt="Card image" style={{ height: "300px", objectFit: "cover" }} />
 						<Card.ImgOverlay className="align-items-end d-flex">
 							<Card.Title>
@@ -55,7 +55,7 @@ const Projects = () => {
 							</Card.Body>
 						</Card.ImgOverlay>
 					</Card>
-					<Card className="bg-dark text-white mx-3 my-3">
+					<Card className="bg-dark text-white mx-3 my-3 projectpage-cards">
 						<Card.Img src={remimgSrc} alt="Card image" style={{ height: "300px", objectFit: "cover" }} />
 						<Card.ImgOverlay className="d-flex align-items-end">
 							<Card.Title>
@@ -70,7 +70,7 @@ const Projects = () => {
 					</Card>
 				</CardGroup>
 				<CardGroup>
-					<Card className="bg-dark text-white mx-3 my-3">
+					<Card className="bg-dark text-white mx-3 my-3 projectpage-cards">
 						<Card.Img src={seiimgSrc} alt="Card image" style={{ height: "300px", objectFit: "cover" }} />
 						<Card.ImgOverlay className="d-flex align-items-end">
 							<Card.Title>
@@ -83,7 +83,7 @@ const Projects = () => {
 							</Card.Body>
 						</Card.ImgOverlay>
 					</Card>
-					<Card className="bg-dark text-white mx-3 my-3">
+					<Card className="bg-dark text-white mx-3 my-3 projectpage-cards">
 						<Card.Img src={comimgSrc} alt="Card image" style={{ height: "300px", objectFit: "cover" }} />
 						<Card.ImgOverlay className="d-flex align-items-end">
 							<Card.Title>

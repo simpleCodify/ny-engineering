@@ -249,3 +249,8 @@ a {
 .nav-link {
 	letter-spacing: 1px;
 }
+
+.projectpage-cards {
+	border-top: 5px inset rgba(195, 250, 250, 0.8);
+	border-bottom: 5px outset rgba(195, 250, 250, 0.8);
+}
