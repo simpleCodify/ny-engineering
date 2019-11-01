@@ -32,8 +32,8 @@ let imgPath = require.context("../../public/images/commercial", true);
 
 const Commercial = props => {
 	return (
-		<Container>
-			<Container>
+		<Container fluid>
+			<Container className="col-12 col-md-9">
 				<hr className="my-3 col-md-6" />
 				<h1 className="text-center my-5 titlehead">Commercial & Industrial</h1>
 				<hr className="my-3 mb-5 col-md-7" />
@@ -47,7 +47,7 @@ const Commercial = props => {
 						let imgSrc = imgPath("./" + `${build.name}` + "1.jpg");
 
 						return (
-							<Card className="text-white" style={imgStyle} key={idx} value={build.name}>
+							<Card className="text-white my-2" style={imgStyle} key={idx} value={build.name}>
 								<Card.Img src={imgSrc}></Card.Img>
 								<Card.ImgOverlay className="text-center d-flex flex-column mt-auto">
 									<Button onClick={props.handleClick} value={build.name} name={build.images} className="btn-sm btn-sm-featured mx-auto mt-auto" variant="outline-secondary">

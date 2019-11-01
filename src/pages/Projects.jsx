@@ -1,9 +1,7 @@
 import React from "react";
 
-import { Container, CardGroup, Card, Button } from "react-bootstrap";
+import { Container, CardGroup, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-import CarouselSlides from "../components/CarouselSlides";
 
 let newResidentials = ["Claremont Dr, San Bruno, CA", "Fir St, South San Francisco, CA", "Howard Ave, Burlingame, CA", "Marston Ave, San Francisco, CA", "Paloma Ave, Burlingame, CA", "Pullman Avenue, Half Moon Bay, CA", "Santa Clara Street, Brisbane, CA", "Skyfarm Drive, Santa Rosa, CA", "Trinidad Dr, Tiburon, CA", "Werner Ave Daly City, CA (3 Houses)"];
 let remodels = ["Bayswater Ave Burlingame, CA", "Chelmsford Rd, Hillsborough, CA", "Highland Ave San Carlos, CA", "Jackson St, San Francisco, CA", "Mallorca Way, San Francisco, CA", "Matheson Street, Healdsburg, CA", "Ramona Avenue, Albany, CA", "Rosewood Drive, San Francisco, CA"];
@@ -39,7 +37,7 @@ const Projects = () => {
 	return (
 		<div>
 			<Container fluid className="my-5">
-				{/* <CarouselSlides /> */}
+				<hr className="my-5 col-8" />
 
 				<CardGroup>
 					<Card className="bg-dark text-white mx-3 my-3 projectpage-cards">
@@ -97,6 +95,7 @@ const Projects = () => {
 						</Card.ImgOverlay>
 					</Card>
 				</CardGroup>
+				<hr className="my-5 col-8" />
 			</Container>
 		</div>
 	);
