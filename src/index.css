@@ -192,10 +192,6 @@ a {
 	object-fit: contain;
 }
 
-.dropdown-menu {
-	width: 300px;
-}
-
 .about-profileimg,
 .about-clientimg {
 	transition: all 0.5s ease 0s;
@@ -227,7 +223,25 @@ a {
 }
 
 .about-card {
-	border: 3px outset rgba(128, 128, 128, 0.76);
-	border-radius: 25px;
+	/* border: 2px outset rgba(128, 128, 128, 0.76); */
 	box-shadow: 2px 20px 23px 0px rgba(0, 0, 0, 0.5);
+}
+
+.featurecarousel {
+	width: 85%;
+}
+
+.featurecarousel-item {
+	max-height: 65vh;
+	/* width: 100%; */
+}
+
+.featurecarousel img {
+	/* height: 65vh; */
+	/* width: 100%; */
+	/* object-fit: "cover"; */
+}
+
+#featurecarousel-imgs {
+	object-fit: cover;
 }

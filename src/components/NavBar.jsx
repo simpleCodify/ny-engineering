@@ -17,8 +17,11 @@ const NavBar = () => {
 					<NavLink to="/about" className="nav-link mx-4" activeStyle={{ fontWeight: "bold", color: "black" }}>
 						The Firm
 					</NavLink>
-					<NavDropdown className="mx-4" title="Projects" id="collasible-nav-dropdown" >
-						<NavLink to="/projects/commercial" className="nav-link text-center p-0" activeStyle={{ fontWeight: "bold", color: "black" }} >
+					<NavLink to="/projects" className="nav-link mx-4" activeStyle={{ fontWeight: "bold", color: "black" }}>
+						Projects
+					</NavLink>
+					{/* <NavDropdown className="mx-4" title="Projects" id="collasible-nav-dropdown">
+						<NavLink to="/projects/commercial" className="nav-link text-center p-0" activeStyle={{ fontWeight: "bold", color: "black" }}>
 							Commercial
 						</NavLink>
 						<NavDropdown.Divider />
@@ -36,7 +39,7 @@ const NavBar = () => {
 						<NavLink to="/projects/seismic-retrofit" className="nav-link text-center p-0" activeStyle={{ fontWeight: "bold", color: "black" }}>
 							Seismic Retrofit
 						</NavLink>
-					</NavDropdown>
+					</NavDropdown> */}
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>

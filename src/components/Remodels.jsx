@@ -46,7 +46,7 @@ const Remodels = props => {
 		<Container>
 			<Container>
 				<hr className="my-3 col-md-6" />
-				<h1 className="text-center my-5 titlehead">Remodeling and Additions</h1>
+				<h1 className="text-center my-5 titlehead">Remodeling & Additions</h1>
 				<hr className="my-3 mb-5 col-md-7" />
 				<CardColumns>
 					{remodels.map((build, idx) => {

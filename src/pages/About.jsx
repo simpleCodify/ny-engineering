@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 
 let biopicPath = require.context("../../public/images/biopic", true);
 let biopicPathtwo = require.context("../../public/images/biopic", true);
-let nbiopic = biopicPath("./nilgunbiopic.jpg");
+let nbiopic = biopicPath("./nilgunbio.jpg");
 let nclientpic = biopicPathtwo("./client.jpg");
 
 const About = () => {

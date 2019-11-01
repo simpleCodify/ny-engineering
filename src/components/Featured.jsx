@@ -36,15 +36,17 @@ console.log(randomRes);
 
 const Featured = () => {
 	return (
-		<Container>
+		<Container fluid>
 			<hr />
 			<h3>Featured Projects</h3>
 			<CardDeck className="p-3 fontvariantsc">
 				<Card>
-					<Card.Img src={resimgSrc} style={{ height: "150px", objectFit: "cover" }} />
+					<Card.Img src={resimgSrc} style={{ height: "200px", objectFit: "cover" }} />
 					<Card.Footer className="text-center" style={{ backgroundColor: "rgb(220,220,220)", borderBottomLeftRadius: "25px", borderBottomRightRadius: "25px", border: "5px solid white" }}>
-						<Card.Text className="text-shadow">New Residential</Card.Text>
-						<Link className="rr_link mt-auto" to={`/projects/residential/${randomResIdx}`}>
+						<Card.Text className="text-shadow" style={{ letterSpacing: "2px" }}>
+							New Residential
+						</Card.Text>
+						<Link className="rr_link mt-auto" to={`/projects/residential`}>
 							<span style={{ color: "black", fontSize: "14px" }}>
 								{" "}
 								<Button className="btn-sm-featured" variant="outline-secondary">
@@ -56,10 +58,12 @@ const Featured = () => {
 				</Card>
 
 				<Card>
-					<Card.Img src={remimgSrc} style={{ height: "150px", objectFit: "cover" }} />
+					<Card.Img src={remimgSrc} style={{ height: "200px", objectFit: "cover" }} />
 					<Card.Footer className="text-center" style={{ backgroundColor: "rgb(220,220,220)", borderBottomLeftRadius: "25px", borderBottomRightRadius: "25px", border: "5px solid white" }}>
-						<Card.Text className="text-shadow">Remodeling & Additions</Card.Text>
-						<Link className="rr_link mt-auto" to={`/projects/residential/${randomRemIdx}`}>
+						<Card.Text className="text-shadow" style={{ letterSpacing: "2px" }}>
+							Remodeling & Additions
+						</Card.Text>
+						<Link className="rr_link mt-auto" to={`/projects/remodels`}>
 							<span style={{ color: "black", fontSize: "14px" }}>
 								{" "}
 								<Button className="btn-sm-featured" variant="outline-secondary">
@@ -71,10 +75,12 @@ const Featured = () => {
 				</Card>
 
 				<Card>
-					<Card.Img src={seiimgSrc} style={{ height: "150px", objectFit: "cover" }} />
+					<Card.Img src={seiimgSrc} style={{ height: "200px", objectFit: "cover" }} />
 					<Card.Footer className="text-center" style={{ backgroundColor: "rgb(220,220,220)", borderBottomLeftRadius: "25px", borderBottomRightRadius: "25px", border: "5px solid white" }}>
-						<Card.Text className="text-shadow">Seismic Retrofit</Card.Text>
-						<Link className="rr_link mt-auto" to={`/projects/seismic-retrofit/${randomSeiIdx}`}>
+						<Card.Text className="text-shadow" style={{ letterSpacing: "2px" }}>
+							Seismic Retrofit
+						</Card.Text>
+						<Link className="rr_link mt-auto" to={`/projects/seismic-retrofit`}>
 							<span style={{ color: "black", fontSize: "14px" }}>
 								<Button className="btn-sm-featured" variant="outline-secondary">
 									View
@@ -85,10 +91,12 @@ const Featured = () => {
 				</Card>
 
 				<Card>
-					<Card.Img src={comimgSrc} style={{ height: "150px", objectFit: "cover" }} />
+					<Card.Img src={comimgSrc} style={{ height: "200px", objectFit: "cover" }} />
 					<Card.Footer className="text-center" style={{ backgroundColor: "rgb(220,220,220)", borderBottomLeftRadius: "25px", borderBottomRightRadius: "25px", border: "5px solid white" }}>
-						<Card.Text className="text-shadow">Commercial & Industrial</Card.Text>
-						<Link className="rr_link mt-auto" to={`/projects/commercial/${randomComIdx}`}>
+						<Card.Text className="text-shadow" style={{ letterSpacing: "2px" }}>
+							Commercial & Industrial
+						</Card.Text>
+						<Link className="rr_link mt-auto" to={`/projects/commercial`}>
 							<span style={{ color: "black", fontSize: "14px" }}>
 								{" "}
 								<Button className="btn-sm-featured" variant="outline-secondary">

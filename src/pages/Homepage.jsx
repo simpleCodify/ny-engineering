@@ -3,21 +3,12 @@ import React from "react";
 import { Container, Carousel } from "react-bootstrap";
 
 import Featured from "../components/Featured";
+import CarouselSlides from "../components/CarouselSlides";
 
 const Homepage = () => {
 	return (
 		<Container fluid>
-			<Carousel className="my-5">
-				<Carousel.Item>
-					<img className="d-block w-100" src="https://placeimg.com/640/300/arch/sepia" alt="First slide" />
-				</Carousel.Item>
-				<Carousel.Item>
-					<img className="d-block w-100" src="https://placeimg.com/640/300/arch/grayscale" alt="Third slide" />
-				</Carousel.Item>
-				<Carousel.Item>
-					<img className="d-block w-100" src="https://placeimg.com/640/300/tech/grayscale" alt="Third slide" />
-				</Carousel.Item>
-			</Carousel>
+			<CarouselSlides />
 			<div className="my-5">
 				<Featured />
 			</div>
