@@ -28,16 +28,20 @@ class App extends Component {
 	}
 
 	handleClick = e => {
-		console.log(e.target.value);
-		console.log(e.target.name);
-		console.log(e.target.name.split("-"))
+		e.preventDefault();
 		let imgs = e.target.name.split("-")
 		this.setState({ property: e.target.value, show: true, test: imgs });
 	};
 
-	showModal = () => {
-		this.setState({ show: true });
-	};
+	// showModal = () => {
+	// 	this.setState(prevState => ({
+	// 		...prevState, show: true
+	// 	}))
+	// };
+
+	// showModal = () => {
+	// 	this.setState({ show: true });
+	// };
 
 	closeModal = () => {
 		this.setState({ show: false });

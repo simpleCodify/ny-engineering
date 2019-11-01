@@ -40,7 +40,7 @@ h3,
 
 /* Transitions */
 
-@keyframes cardMoveInLeft {
+/* @keyframes cardMoveInLeft {
 	0% {
 		opacity: 0;
 		transform: translateX(-100rem);
@@ -82,7 +82,7 @@ h3,
 		opacity: 1;
 		transform: translateY(0);
 	}
-}
+} */
 
 /* Link */
 .rr_link:link,
