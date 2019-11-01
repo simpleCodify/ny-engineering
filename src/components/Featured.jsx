@@ -38,7 +38,9 @@ const Featured = () => {
 	return (
 		<Container fluid>
 			<hr />
-			<h3>Featured Projects</h3>
+			<h3 className="titlehead text-center" id="about-title">
+				Featured Projects
+			</h3>
 			<CardDeck className="p-3 fontvariantsc">
 				<Card>
 					<Card.Img src={resimgSrc} style={{ height: "200px", objectFit: "cover" }} />

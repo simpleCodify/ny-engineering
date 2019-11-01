@@ -245,3 +245,7 @@ a {
 #featurecarousel-imgs {
 	object-fit: cover;
 }
+
+.nav-link {
+	letter-spacing: 1px;
+}
