@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import About from "./pages/About";
+import Awards from "./pages/Awards";
+import Services from "./pages/Services";
 import Homepage from "./pages/Homepage";
 import Projects from "./pages/Projects";
 
@@ -29,7 +31,7 @@ class App extends Component {
 
 	handleClick = e => {
 		e.preventDefault();
-		let imgs = e.target.name.split("-")
+		let imgs = e.target.name.split("-");
 		this.setState({ property: e.target.value, show: true, test: imgs });
 	};
 
@@ -56,15 +58,18 @@ class App extends Component {
 				<Switch>
 					<Route exact path="/" children={<Homepage />} />
 					<Route exact path="/projects" children={<Projects />} />
-					<Route path="/projects/residential" children={<Residential handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} />
-					<Route path="/projects/remodels" children={<Remodels handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} />
-					<Route path="/projects/commercial" children={<Commercial handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} />
-					<Route path="/projects/seismic-retrofit" children={<Seismic handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} />
+					<Route path="/projects/residential" children={<Residential handleClick={this.handleClick} showModal={this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test} />} />
+					<Route path="/projects/remodels" children={<Remodels handleClick={this.handleClick} showModal={this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test} />} />
+					<Route path="/projects/commercial" children={<Commercial handleClick={this.handleClick} showModal={this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test} />} />
+					<Route path="/projects/seismic-retrofit" children={<Seismic handleClick={this.handleClick} showModal={this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test} />} />
 
 					{/* <Route exact path="/testing" children={<Testing handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property}/>} />
 					<Route path="/testingtwo" children={<TestingTwo handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} /> */}
 
 					<Route path="/about" children={<About />} />
+					<Route path="/services" children={<Services />} />
+					<Route path="/awards" children={<Awards />} />
+					
 				</Switch>
 
 				<Footer />

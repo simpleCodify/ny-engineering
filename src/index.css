@@ -254,3 +254,62 @@ a {
 	border-top: 5px inset rgba(195, 250, 250, 0.8);
 	border-bottom: 5px outset rgba(195, 250, 250, 0.8);
 }
+
+.modal-content {
+	border: none;
+	background: none;
+	width: 100%;
+	height: 100%;
+}
+
+#contained-modal-title {
+	color: white;
+}
+
+.close {
+	color: white;
+}
+
+.modal-backdrop.fade {
+	opacity: 0.85;
+}
+
+#carnewr .carousel,
+#carcom .carousel,
+#carrem .carousel,
+#carsei .carousel {
+	width: 100vw;
+}
+
+#carnewr .carousel-inner,
+#carcom .carousel-inner,
+#carrem .carousel-inner,
+#carsei .carousel-inner {
+	height: 100%;
+	width: 100%;
+	background: none;
+}
+
+#carnewr img,
+#carcom img,
+#carrem img,
+#carsei img {
+	height: 100%;
+	object-fit: "cover";
+}
+
+#carnewr .carousel-control-prev,
+#carnewr .carousel-control-next,
+#carcom .carousel-control-prev,
+#carcom .carousel-control-next,
+#carrem .carousel-control-prev,
+#carrem .carousel-control-next,
+#carsei .carousel-control-prev,
+#carsei .carousel-control-next {
+	opacity: 1;
+	width: 5%;
+}
+
+.aboutsec-titles {
+	text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+}

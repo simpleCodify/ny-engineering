@@ -28,7 +28,7 @@ const Footer = () => {
 						</p>
 						<hr style={{ width: "25px", borderColor: "rgba(80,80,80,0.45)" }} />
 						<p>
-							<a style={{ textDecoration: "none", color: "black" }} href="www.linkedin.com/in/jonathan-pak/">
+							<a style={{ textDecoration: "none", color: "black" }} href="https://www.linkedin.com/in/jonathan-pak/">
 								Designed by Jonathan Pak
 							</a>
 						</p>

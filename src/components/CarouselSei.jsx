@@ -15,7 +15,7 @@ console.log(images);
 
 const CarouselSei = props => {
 	return (
-		<Carousel>
+		<Carousel id="carsei">
 			{props.images !== ""
 				? props.images.map((img, idx) => {
 						return (

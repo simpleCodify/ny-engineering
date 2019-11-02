@@ -15,7 +15,7 @@ console.log(images);
 
 const CarouselCom = props => {
 	return (
-		<Carousel>
+		<Carousel id="carcom">
 			{props.images !== ""
 				? props.images.map((img, idx) => {
 						return (
@@ -23,7 +23,7 @@ const CarouselCom = props => {
 								<img className="d-block w-100" src={images[img]} alt="carousel slide" />
 							</Carousel.Item>
 						);
-				})
+				  })
 				: "Loading..."}
 		</Carousel>
 	);
