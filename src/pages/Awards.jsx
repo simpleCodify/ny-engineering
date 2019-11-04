@@ -1,21 +1,24 @@
 import React from "react";
 
 import { Container, Row } from "react-bootstrap";
+import BannerTitles from "../components/BannerTitles";
 
 const Awards = () => {
-    return (
-        <Container>
-        <Row>
-            <div className="col-12 text-center mx-auto">
-                <hr className="my-3 col-md-6" />
-                <h1 className="my-5 titlehead" id="about-title">
-                    Accomplishments
-                </h1>
-                <hr className="my-3 mb-5 col-md-7" />
-            </div>
-        </Row>
-    </Container>
-    )
-}
+	return (
+		<div>
+			<BannerTitles title={"Awards"} />
+			<Container fluid className="p-0">
+				<Container>
+					<Row>
+						<h5>2018 Remodel of the Year - San Francisco, California</h5>
+					</Row>
+					<Row>
+						<p>Architect/Designers | Red Dot Studio | Structural Engineer: NY Engineering</p>
+					</Row>
+				</Container>
+			</Container>
+		</div>
+	);
+};
 
 export default Awards;

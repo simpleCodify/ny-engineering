@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import { Card, CardColumns, Button, Modal } from "react-bootstrap";
 import CarouselNewR from "./CarouselNewR";
+import BannerTitles from "./BannerTitles";
 
 let animationArray = ["cardMoveInTop", "cardMoveInBottom", "cardMoveInLeft", "cardMoveInRight"];
 
@@ -53,12 +54,9 @@ let imgPath = require.context("../../public/images/newResidential", true);
 
 const Residential = props => {
 	return (
-		<Container fluid>
+		<Container fluid className="p-0">
+			<BannerTitles title={"New Residentials"} />
 			<Container className="col-12 col-md-9">
-				<hr className="my-3 col-md-6" />
-				<h1 className="text-center my-5 titlehead">New Residentials</h1>
-				<hr className="my-3 mb-5 col-md-7" />
-
 				<CardColumns>
 					{residential.map((build, idx) => {
 						let time = Math.random() * 4;

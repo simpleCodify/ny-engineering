@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import { Card, CardColumns, Button, Modal } from "react-bootstrap";
 import CarouselRemo from "./CarouselRemo";
+import BannerTitles from "./BannerTitles";
 
 let animationArray = ["cardMoveInTop", "cardMoveInBottom", "cardMoveInLeft", "cardMoveInRight"];
 
@@ -43,11 +44,9 @@ let imgPath2 = require.context("../../public/images/remodels", true);
 
 const Remodels = props => {
 	return (
-		<Container fluid>
+		<Container fluid className="p-0">
+			<BannerTitles title={"Remodeling & Additions"} />
 			<Container className="col-12 col-md-9">
-				<hr className="my-3 col-md-6" />
-				<h1 className="text-center my-5 titlehead">Remodeling & Additions</h1>
-				<hr className="my-3 mb-5 col-md-7" />
 				<CardColumns>
 					{remodels.map((build, idx) => {
 						let time = Math.random() * 4;

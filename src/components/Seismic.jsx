@@ -1,6 +1,8 @@
 import React from "react";
 import { Card, CardColumns, Container, Button, Modal } from "react-bootstrap";
 import CarouselSei from "./CarouselSei";
+import BannerTitles from "./BannerTitles";
+import SeismicMiniCara from "./SeismicMiniCara";
 
 let animationArray = ["cardMoveInTop", "cardMoveInBottom", "cardMoveInLeft", "cardMoveInRight"];
 
@@ -34,12 +36,10 @@ let imgPath = require.context("../../public/images/seismic", true);
 
 const Seismic = props => {
 	return (
-		<Container fluid>
+		<Container fluid className="p-0">
+			<BannerTitles title={"Soft Story Seismic Retrofit"} />
+			<SeismicMiniCara />
 			<Container className="col-12 col-md-9">
-				<hr className="my-3 col-md-6" />
-				<h1 className="text-center my-5  titlehead">Soft Story Seismic Retrofit</h1>
-				<hr className="my-3 mb-5 col-md-7" />
-
 				<CardColumns>
 					{seismic.map((build, idx) => {
 						let time = Math.random() * 4;

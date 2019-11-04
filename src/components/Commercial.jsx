@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardColumns, Container, Button, Modal } from "react-bootstrap";
 import CarouselCom from "./CarouselCom";
+import BannerTitles from "./BannerTitles";
 
 let animationArray = ["cardMoveInTop", "cardMoveInBottom", "cardMoveInLeft", "cardMoveInRight"];
 
@@ -32,12 +33,9 @@ let imgPath = require.context("../../public/images/commercial", true);
 
 const Commercial = props => {
 	return (
-		<Container fluid>
+		<Container fluid className="p-0">
+			<BannerTitles title={"Commercial & Industrial"} />
 			<Container className="col-12 col-md-9">
-				<hr className="my-3 col-md-6" />
-				<h1 className="text-center my-5 titlehead">Commercial & Industrial</h1>
-				<hr className="my-3 mb-5 col-md-7" />
-
 				<CardColumns>
 					{commercial.map((build, idx) => {
 						let time = Math.random() * 4;
