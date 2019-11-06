@@ -29,7 +29,21 @@ const Awards = props => {
 						<Card className="about-card">
 							<Card.Body className="p-5">
 								<Card.Title className="mb-5">
-									<h4>2018 Remodel of the Year - San Francisco, California</h4>
+									<Row>
+										<Col className="col-12 col-sm-12 col-md-6 col-lg-6">
+											<h4>2018 Remodel of the Year - San Francisco, California</h4>
+										</Col>
+										<Col className="col-12 col-sm-12 col-md-6 col-lg-6 text-right text-muted">
+											<small>Architect/Designers | Red Dot Studio | Structural Engineer: NY Engineering</small>
+											<br />
+											<small>Builder | MT Development</small>
+											<br />
+											<small>Landscape Architect/Designer | Flora Grubb Gardens</small>
+											<br />
+											<small>Photographer | John Lee | Marketing Firm: Wagner Creative</small>
+											<br />
+										</Col>
+									</Row>
 								</Card.Title>
 								<Card.Text>
 									<p>Like much of San Francisco's housing stock, the Laidley Street Cottage was becoming out of date. Built to last 100 years, the home was at the end of its useful life, with all building systems needing upgrading. Originally, the home was a rear yard cottage. In the redesign, additional square footage was modest and focused on right-sizing the property to the site while adding new building systems, seismic retrofitting, and daylit design.</p>
@@ -38,7 +52,7 @@ const Awards = props => {
 										outdoor oasis help foster a livable city for the next 100 years.
 									</p>
 								</Card.Text>
-								<Card.Text className="ml-5 text-right">
+								{/* <Card.Text className="text-right">
 									<small>Architect/Designers | Red Dot Studio | Structural Engineer: NY Engineering</small>
 									<br />
 									<small>Builder | MT Development</small>
@@ -47,7 +61,7 @@ const Awards = props => {
 									<br />
 									<small>Photographer | John Lee | Marketing Firm: Wagner Creative</small>
 									<br />
-								</Card.Text>
+								</Card.Text> */}
 							</Card.Body>
 							<Card.Footer>
 								<blockquote className="text-muted mb-0">"The stair, particularly the stair turn and skylights, is lovely. Judges loved the shower off the garden and overall, found this project very beautiful."</blockquote>
