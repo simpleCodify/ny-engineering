@@ -12,7 +12,7 @@ const Footer = () => {
 						<br />
 						<p>Nilgun Wolpe, P.E.</p>
 						<hr style={{ width: "25px", borderColor: "rgba(80,80,80,0.45)" }} />
-						<p>License # 68482</p>
+						{/* <p>License # 68482</p> */}
 						<p>850 S. Van Ness Ave. Suite #9</p>
 						<p>San Francisco, CA 94110</p>
 						<hr style={{ width: "25px", borderColor: "rgba(80,80,80,0.45)" }} />
