@@ -9,7 +9,6 @@ function shuffle(array) {
 	return array;
 }
 let slides = ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg"];
-
 let slideimgPath = require.context("../../public/images/banner", true);
 
 let newSlides = shuffle(slides);

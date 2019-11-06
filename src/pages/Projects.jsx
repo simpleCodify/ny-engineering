@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, CardGroup, Card } from "react-bootstrap";
+import { Container, CardGroup, Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BannerTitles from "../components/BannerTitles";
 
@@ -39,62 +39,68 @@ const Projects = () => {
 		<div>
 			<Container fluid className="my-5 p-0">
 				<BannerTitles title={"Projects"} />
-				<CardGroup>
-					<Card className="bg-dark text-white mx-3 my-3 projectpage-cards">
-						<Card.Img src={resimgSrc} alt="Card image" style={{ height: "300px", objectFit: "cover" }} />
-						<Card.ImgOverlay className="align-items-end d-flex">
-							<Card.Title>
-								<h3 className="text-center" style={{ textShadow: "2px 2px 2px rgba(0,0,0,1)" }}>
-									New Residential
-								</h3>
-							</Card.Title>
-							<Card.Body>
-								<Link className="rr_link mx-auto mt-auto stretched-link" to={`/projects/residential`}></Link>
-							</Card.Body>
-						</Card.ImgOverlay>
-					</Card>
-					<Card className="bg-dark text-white mx-3 my-3 projectpage-cards">
-						<Card.Img src={remimgSrc} alt="Card image" style={{ height: "300px", objectFit: "cover" }} />
-						<Card.ImgOverlay className="d-flex align-items-end">
-							<Card.Title>
-								<h3 className="text-center" style={{ textShadow: "2px 2px 2px rgba(0,0,0,1)" }}>
-									Remodeling & Additions
-								</h3>
-							</Card.Title>
-							<Card.Body>
-								<Link className="rr_link mx-auto mt-auto stretched-link" to={`/projects/remodels`}></Link>
-							</Card.Body>
-						</Card.ImgOverlay>
-					</Card>
-				</CardGroup>
-				<CardGroup>
-					<Card className="bg-dark text-white mx-3 my-3 projectpage-cards">
-						<Card.Img src={seiimgSrc} alt="Card image" style={{ height: "300px", objectFit: "cover" }} />
-						<Card.ImgOverlay className="d-flex align-items-end">
-							<Card.Title>
-								<h3 className="text-center" style={{ textShadow: "2px 2px 2px rgba(0,0,0,1)" }}>
-									Soft Story Seismic Retrofit
-								</h3>
-							</Card.Title>
-							<Card.Body>
-								<Link className="rr_link mx-auto mt-auto stretched-link" to={`/projects/seismic-retrofit`}></Link>
-							</Card.Body>
-						</Card.ImgOverlay>
-					</Card>
-					<Card className="bg-dark text-white mx-3 my-3 projectpage-cards">
-						<Card.Img src={comimgSrc} alt="Card image" style={{ height: "300px", objectFit: "cover" }} />
-						<Card.ImgOverlay className="d-flex align-items-end">
-							<Card.Title>
-								<h3 className="text-center" style={{ textShadow: "2px 2px 2px rgba(0,0,0,1)" }}>
-									Commercial & Industrial
-								</h3>
-							</Card.Title>
-							<Card.Body>
-								<Link className="rr_link mx-auto mt-auto stretched-link" to={`/projects/commercial`}></Link>
-							</Card.Body>
-						</Card.ImgOverlay>
-					</Card>
-				</CardGroup>
+				<Row className="p-3">
+					<Col className="col-12 col-lg-3 col-sm-12 col-md-6 mx-auto">
+						<Card className="bg-dark text-white my-3 projectpage-cards">
+							<Card.Img src={resimgSrc} alt="Card image" />
+							<Card.ImgOverlay className="align-items-end d-flex">
+								<Card.Title className="col-12">
+									<h3 className="text-center" style={{ textShadow: "2px 2px 2px rgba(0,0,0,1)" }}>
+										New Residential
+									</h3>
+								</Card.Title>
+								<Card.Body>
+									<Link className="rr_link mx-auto mt-auto stretched-link" to={`/projects/residential`}></Link>
+								</Card.Body>
+							</Card.ImgOverlay>
+						</Card>
+					</Col>
+					<Col className="col-12 col-lg-3 col-sm-12 col-md-6 mx-auto">
+						<Card className="bg-dark text-white my-3 projectpage-cards">
+							<Card.Img src={remimgSrc} alt="Card image" />
+							<Card.ImgOverlay className="d-flex align-items-end">
+								<Card.Title className="col-12">
+									<h3 className="text-center" style={{ textShadow: "2px 2px 2px rgba(0,0,0,1)" }}>
+										Remodeling & Additions
+									</h3>
+								</Card.Title>
+								<Card.Body>
+									<Link className="rr_link mx-auto mt-auto stretched-link" to={`/projects/remodels`}></Link>
+								</Card.Body>
+							</Card.ImgOverlay>
+						</Card>
+					</Col>
+					<Col className="col-12 col-lg-3 col-sm-12 col-md-6 mx-auto">
+						<Card className="bg-dark text-white my-3 projectpage-cards">
+							<Card.Img src={seiimgSrc} alt="Card image" />
+							<Card.ImgOverlay className="d-flex align-items-end">
+								<Card.Title className="col-12">
+									<h3 className="text-center" style={{ textShadow: "2px 2px 2px rgba(0,0,0,1)" }}>
+										Soft Story Seismic Retrofit
+									</h3>
+								</Card.Title>
+								<Card.Body>
+									<Link className="rr_link mx-auto mt-auto stretched-link" to={`/projects/seismic-retrofit`}></Link>
+								</Card.Body>
+							</Card.ImgOverlay>
+						</Card>
+					</Col>
+					<Col className="col-12 col-lg-3 col-sm-12 col-md-6 mx-auto">
+						<Card className="bg-dark text-white my-3 projectpage-cards">
+							<Card.Img src={comimgSrc} alt="Card image" />
+							<Card.ImgOverlay className="d-flex align-items-end">
+								<Card.Title className="col-12">
+									<h3 className="text-center" style={{ textShadow: "2px 2px 2px rgba(0,0,0,1)" }}>
+										Commercial & Industrial
+									</h3>
+								</Card.Title>
+								<Card.Body>
+									<Link className="rr_link mx-auto mt-auto stretched-link" to={`/projects/commercial`}></Link>
+								</Card.Body>
+							</Card.ImgOverlay>
+						</Card>
+					</Col>
+				</Row>
 				<hr className="my-5 col-8" />
 			</Container>
 		</div>

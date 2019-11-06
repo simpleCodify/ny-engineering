@@ -68,8 +68,7 @@ class App extends Component {
 
 					<Route path="/about" children={<About />} />
 					<Route path="/services" children={<Services />} />
-					<Route path="/awards" children={<Awards />} />
-					
+					<Route path="/awards" children={<Awards handleClick={this.handleClick} showModal={this.showModal} closeModal={this.closeModal} show={this.state.show} />} />
 				</Switch>
 
 				<Footer />
