@@ -52,16 +52,6 @@ const Awards = props => {
 										outdoor oasis help foster a livable city for the next 100 years.
 									</p>
 								</Card.Text>
-								{/* <Card.Text className="text-right">
-									<small>Architect/Designers | Red Dot Studio | Structural Engineer: NY Engineering</small>
-									<br />
-									<small>Builder | MT Development</small>
-									<br />
-									<small>Landscape Architect/Designer | Flora Grubb Gardens</small>
-									<br />
-									<small>Photographer | John Lee | Marketing Firm: Wagner Creative</small>
-									<br />
-								</Card.Text> */}
 							</Card.Body>
 							<Card.Footer>
 								<blockquote className="text-muted mb-0">"The stair, particularly the stair turn and skylights, is lovely. Judges loved the shower off the garden and overall, found this project very beautiful."</blockquote>
@@ -75,42 +65,6 @@ const Awards = props => {
 						</Card>
 					</Col>
 				</Row>
-
-				<div className="mx-auto col-12 text-center">
-					<h4 className="mx-auto text-center">Licenses</h4>
-					<Row>
-						<Col xs={12} md={5} lg={5} className="mx-auto my-3">
-							<Card className="about-card license-card">
-								<Card.Body>
-									<Card.Title>
-										<h5 className="mx-auto text-center" style={{ lineHeight: "40px" }}>
-											Board for Professional Engineers and Land Surveyors
-										</h5>
-									</Card.Title>
-									<Card.Text>Professional Engineer in Civil Engineering</Card.Text>
-								</Card.Body>
-								<Card.Footer>
-									<small>California License #68482</small>
-								</Card.Footer>
-							</Card>
-						</Col>
-						<Col xs={12} md={5} lg={5} className="mx-auto my-3">
-							<Card className="about-card license-card">
-								<Card.Body>
-									<Card.Title>
-										<h5 className="mx-auto text-center" style={{ lineHeight: "40px" }}>
-											The University of the State of New York
-										</h5>
-									</Card.Title>
-									<Card.Text>Professional Engineer in the State of New York</Card.Text>
-								</Card.Body>
-								<Card.Footer>
-									<small>New York License #101584</small>
-								</Card.Footer>
-							</Card>
-						</Col>
-					</Row>
-				</div>
 			</Container>
 
 			<Modal show={props.show} onHide={props.closeModal} container={this} dialogClassName="modal-90w" aria-labelledby="contained-modal-title">

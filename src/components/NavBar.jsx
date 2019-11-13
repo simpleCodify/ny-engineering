@@ -20,32 +20,15 @@ const NavBar = () => {
 					<NavLink to="/services" className="nav-link mx-4" activeStyle={{ fontWeight: "bold", color: "black" }}>
 						Services
 					</NavLink>
-					<NavLink to="/awards" className="nav-link mx-4" activeStyle={{ fontWeight: "bold", color: "black" }}>
-						Awards
-					</NavLink>
 					<NavLink to="/projects" className="nav-link mx-4" activeStyle={{ fontWeight: "bold", color: "black" }}>
 						Projects
 					</NavLink>
-					{/* <NavDropdown className="mx-4" title="Projects" id="collasible-nav-dropdown">
-						<NavLink to="/projects/commercial" className="nav-link text-center p-0" activeStyle={{ fontWeight: "bold", color: "black" }}>
-							Commercial
-						</NavLink>
-						<NavDropdown.Divider />
-
-						<NavLink to="/projects/residential" className="nav-link text-center p-0" activeStyle={{ fontWeight: "bold", color: "black" }}>
-							Residential
-						</NavLink>
-						<NavDropdown.Divider />
-
-						<NavLink to="/projects/remodels" className="nav-link text-center p-0" activeStyle={{ fontWeight: "bold", color: "black" }}>
-							Remodel & Additions
-						</NavLink>
-						<NavDropdown.Divider />
-
-						<NavLink to="/projects/seismic-retrofit" className="nav-link text-center p-0" activeStyle={{ fontWeight: "bold", color: "black" }}>
-							Seismic Retrofit
-						</NavLink>
-					</NavDropdown> */}
+					<NavLink to="/credentials" className="nav-link mx-4" activeStyle={{ fontWeight: "bold", color: "black" }}>
+						Credentials
+					</NavLink>
+					{/* <NavLink to="/awards" className="nav-link mx-4" activeStyle={{ fontWeight: "bold", color: "black" }}>
+						Awards
+					</NavLink> */}
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>

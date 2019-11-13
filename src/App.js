@@ -17,6 +17,7 @@ import Residential from "./components/Residential";
 import Remodels from "./components/Remodels";
 import Commercial from "./components/Commercial";
 import Seismic from "./components/Seismic";
+import Credentials from "./pages/Credentials";
 
 class App extends Component {
 	constructor(props) {
@@ -67,8 +68,9 @@ class App extends Component {
 					<Route path="/testingtwo" children={<TestingTwo handleClick={this.handleClick} showModal = {this.showModal} closeModal={this.closeModal} show={this.state.show} property={this.state.property} imgs={this.state.test}/>} /> */}
 
 					<Route path="/about" children={<About />} />
+					<Route path="/credentials" children={<Credentials />} />
 					<Route path="/services" children={<Services />} />
-					<Route path="/awards" children={<Awards handleClick={this.handleClick} showModal={this.showModal} closeModal={this.closeModal} show={this.state.show} />} />
+					{/* <Route path="/awards" children={<Awards handleClick={this.handleClick} showModal={this.showModal} closeModal={this.closeModal} show={this.state.show} />} /> */}
 				</Switch>
 
 				<Footer />

@@ -8,9 +8,8 @@ const Services = () => {
 			<BannerTitles title={"Our Services"} />
 			<Container fluid style={{ marginBottom: "20vh" }}>
 				<Row className="col-12 col-md-7 mx-auto mb-5 text-center p-2">
-					<h4 className="mx-auto mb-5">We at N.Y. Engineering specialize in many different types of services.</h4>
+					<h4 className="mx-auto mb-5">We at NY Engineering specialize in many different types of services.</h4>
 					<br />
-					<h5>We have several certifications including the Simpson Strong-Tie seminar for Lateral Systems & Retrofits, the CBC 2014 SEAONC spring seminar, and the SEAONC seminar for Retrofitting Soft Wood-Framed Buildings.</h5>
 				</Row>
 
 				<Row className="col-10 col-md-10 mx-auto about-card my-5 p-5">

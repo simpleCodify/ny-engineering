@@ -382,3 +382,7 @@ a {
 	border: 1px inset black;
 	background-color: rgba(207, 207, 207, 0.384);
 }
+
+.cred-titles {
+	font-weight: 800;
+}
