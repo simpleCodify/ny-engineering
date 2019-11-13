@@ -30,7 +30,7 @@ const Credentials = props => {
 						</ul>
 						<br />
 
-						<p className="cred-titles">Certificates from S,K. Ghosh Associates</p>
+						<p className="cred-titles">Certificates from S.K. Ghosh Associates</p>
 						<ul>
 							<li>2018 IEBC</li>
 							<li>Structural Changes in the 2018 IBC</li>

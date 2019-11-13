@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, CardGroup, Card, Row, Col } from "react-bootstrap";
+import { Container, Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BannerTitles from "../components/BannerTitles";
 

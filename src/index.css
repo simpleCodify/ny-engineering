@@ -223,6 +223,8 @@ a {
 }
 
 .about-card {
+	border-left: 10px ridge rgb(121, 121, 121);
+	border-right: 10px ridge rgb(121, 121, 121);
 	/* border: 2px outset rgba(128, 128, 128, 0.76); */
 	box-shadow: 2px 20px 23px 0px rgba(0, 0, 0, 0.5);
 }
@@ -261,8 +263,8 @@ a {
 
 .projectpage-cards {
 	height: 50vh;
-	border-top: 5px inset rgba(195, 250, 250, 0.8);
-	border-bottom: 5px outset rgba(195, 250, 250, 0.8);
+	border-top: 8px ridge rgba(121, 121, 121, 0.8);
+	border-bottom: 8px ridge rgba(121, 121, 121, 0.8);
 }
 
 .projectpage-cards .card-img {
@@ -372,8 +374,7 @@ a {
 }
 
 .award-card .card-img {
-	height: 100%;
-	width: 100%;
+	height: 25%;
 	object-fit: cover;
 	padding: 0;
 }
