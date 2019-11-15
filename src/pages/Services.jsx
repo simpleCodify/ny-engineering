@@ -14,7 +14,7 @@ const Services = () => {
 
 				<Row className="col-10 col-md-10 mx-auto about-card my-5 p-5">
 					<Col lg className="col-12 col-md-3 text-center ">
-						<h3 className="my-5 aboutsec-titles">New Construction</h3>
+						<h3 className="my-5 aboutsec-titles">New Construction and Commercial</h3>
 					</Col>
 					<Col className="col-12 col-md-9 my-auto mt-3 pt-2">
 						<p>One of our most fundamental services we offer is ground-up design and construction. Whether it is a residential or commercial building, we have the skills and credentials to design and construct your building or structure. Starting with a solid, concrete foundation, we use concrete and masonry for retaining walls and use wood for the frame. From our careful design process to our efficient construction teams, we can find a solution for any project that you may have.</p>

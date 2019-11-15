@@ -15,7 +15,7 @@ console.log(images);
 
 const CarouselNewR = props => {
 	return (
-		<Carousel id="carnewr">
+		<Carousel id="carnewr" wrap={false}>
 			{props.images !== ""
 				? props.images.map((img, idx) => {
 						return (

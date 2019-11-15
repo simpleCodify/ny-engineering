@@ -2,7 +2,7 @@ import React from "react";
 
 import { Carousel } from "react-bootstrap";
 
-let slides = ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg"];
+let slides = ["b.jpg", "a.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg"];
 let slideimgPath = require.context("../../public/images/slides", true);
 
 const CarouselSlides = () => {
