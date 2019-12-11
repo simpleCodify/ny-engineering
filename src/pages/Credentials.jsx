@@ -8,6 +8,13 @@ const Credentials = props => {
 			<BannerTitles title={"Certifications & Licenses"} />
 			<Container className="col-10 mx-auto p-5" style={{ marginBottom: "20vh" }}>
 				<div className="p-5 mb-5 about-card">
+					<h4>Education</h4>
+					<br />
+					<div className="ml-5 mb-5">
+						<p className="cred-titles mb-0">Middle East Technical University, Turkey</p>
+						<p className="mb-0">Bachelor of Science in Civil Engineering</p>
+					</div>
+
 					<h4>Licenses</h4>
 					<br />
 					<div className="ml-5 mb-5">
